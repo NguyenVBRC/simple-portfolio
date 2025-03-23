@@ -1,0 +1,22 @@
+.navContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 1px var(--darkAccent);
+  height: 64px;
+  gap: 32px;
+}
+
+.navContainer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 64%;
+  width: 80px;
+  border-radius: 8px;
+}
+
+.navContainer a:hover {
+  background-color: var(--darkAccent);
+}
