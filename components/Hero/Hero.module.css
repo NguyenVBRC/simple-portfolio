@@ -6,10 +6,19 @@
   height: 90vh;
   width: 100%;
   margin: auto;
+  position: relative;
 }
 
 .heading {
   margin-bottom: 32px;
+}
+
+.verticalLine {
+  height: 64px;
+  border: solid 2px white;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
 }
 
 @media (min-width: 768px) {

@@ -7,6 +7,7 @@ const Hero = () => {
         Welcome. <br /> My name is Jimmy Nguyen.
       </h1>
       <p>I am a developer building whatever I find interesting.</p>
+      <div className={styles.verticalLine}></div>
     </div>
   );
 };

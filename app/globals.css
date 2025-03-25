@@ -1,9 +1,9 @@
 :root {
   /* https://color.adobe.com/ne-jinx-color-theme-19187755/ */
-  --background: #30588c;
   --foreground: #171717;
   --accent: #a63f8a;
   --darkAccent: #401c33;
+  --lightAccent: #30588c;
 }
 
 :root {
