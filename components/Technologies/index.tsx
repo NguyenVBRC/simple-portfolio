@@ -1,3 +1,4 @@
+import Container from "../common/Container";
 import styles from "./Technologies.module.css";
 
 const Technologies = () => {
@@ -12,7 +13,7 @@ const Technologies = () => {
   ];
 
   return (
-    <div className={styles.container}>
+    <Container>
       <h2>Technologies</h2>
       <div className={styles.techContainer}>
         {tech.map((item, index) => (
@@ -21,7 +22,7 @@ const Technologies = () => {
           </div>
         ))}
       </div>
-    </div>
+    </Container>
   );
 };
 
