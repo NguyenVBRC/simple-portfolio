@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 80vh;
   width: 100%;
   margin: auto;
   position: relative;
@@ -11,5 +11,7 @@
 
 .container h2 {
   margin-bottom: 32px;
-  border-bottom: solid 1px var(--lightAccent);
+  border: solid 1px var(--lightAccent);
+  border-radius: 8px;
+  padding: 8px;
 }

@@ -1,14 +1,15 @@
+import Container from "../common/Container";
 import styles from "./Hero.module.css";
 
 const Hero = () => {
   return (
-    <div className={styles.container}>
+    <Container>
       <h1 className={styles.heading}>
         Welcome. <br /> My name is Jimmy Nguyen.
       </h1>
       <p>I am a developer building whatever I find interesting.</p>
       <div className={styles.verticalLine}></div>
-    </div>
+    </Container>
   );
 };
 
