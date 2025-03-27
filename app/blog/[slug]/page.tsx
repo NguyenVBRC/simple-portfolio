@@ -1,9 +1,11 @@
+// To Do: Use Params to get specific project information
+
+import SlugLayout from "@/components/common/SlugLayout";
+
 export default async function Page({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const { slug } = await params;
-
-  return <div>Blog Page: {slug}</div>;
+  return <SlugLayout params={params} />;
 }

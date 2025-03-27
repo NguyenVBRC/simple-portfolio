@@ -1,12 +1,16 @@
+import Container from "../Container";
 import Link from "next/link";
-import styles from "./ContentLayout.module.css";
+import styles from "./PageLayout.module.css";
 
 interface IContent {
   name: string;
   url: string;
 }
 
-const ContentLayout = ({
+// Default Page Layout
+// Uses Common Container and maps items
+
+const PageLayout = ({
   heading,
   content,
 }: {
@@ -16,7 +20,7 @@ const ContentLayout = ({
   return (
     <div className={styles.layoutContainer}>
       <h1>{heading}</h1>
-      <div className={styles.contentContainer}>
+      <Container>
         {content?.map(({ name, url }, index) => {
           return (
             <Link key={index} className={styles.itemContainer} href={url}>
@@ -24,9 +28,9 @@ const ContentLayout = ({
             </Link>
           );
         })}
-      </div>
+      </Container>
     </div>
   );
 };
 
-export default ContentLayout;
+export default PageLayout;

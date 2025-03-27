@@ -1,4 +1,4 @@
-import PageHeading from "@/components/ContentLayout";
+import PageLayout from "@/components/common/PageLayout";
 
 export default async function Page() {
   const heading = "Blogs";
@@ -8,5 +8,5 @@ export default async function Page() {
     { name: "Blog 3", url: "/blog/blog-3" },
   ];
 
-  return <PageHeading heading={heading} content={blogs} />;
+  return <PageLayout heading={heading} content={blogs} />;
 }

@@ -1,0 +1,6 @@
+{
+  "workbench.editor.customLabels.patterns": {
+    "*/components/**/index.tsx": "${dirname}",
+    "*/components/**/*.module.css": "${dirname} CSS"
+  }
+}

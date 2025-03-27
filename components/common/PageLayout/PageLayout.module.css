@@ -2,10 +2,6 @@
   margin: 32px;
 }
 
-.layoutContainer h1 {
-  margin-bottom: 32px;
-}
-
 .contentContainer {
   display: flex;
   justify-content: center;
