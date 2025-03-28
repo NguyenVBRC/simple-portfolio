@@ -1,12 +1,14 @@
 import PageLayout from "@/components/common/PageLayout";
+import { supabase } from "@/lib/supabase";
 
 export default async function Page() {
   const heading = "Projects";
-  const projects = [
-    { name: "Projects 1", url: "/projects/projects-1" },
-    { name: "Projects 2", url: "/projects/projects-2" },
-    { name: "Projects 3", url: "/projects/projects-3" },
-  ];
+  const { data: projects, error } = await supabase.from("Projects").select("*");
+
+  if (error) {
+    console.error("Error fetching posts:", error);
+    return <p>Failed to load posts.</p>;
+  }
 
   return <PageLayout heading={heading} content={projects} />;
 }

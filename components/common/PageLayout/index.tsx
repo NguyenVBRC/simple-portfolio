@@ -4,7 +4,7 @@ import styles from "./PageLayout.module.css";
 
 interface IContent {
   name: string;
-  url: string;
+  link: string;
 }
 
 // Default Page Layout
@@ -21,13 +21,17 @@ const PageLayout = ({
     <div className={styles.layoutContainer}>
       <h1>{heading}</h1>
       <Container>
-        {content?.map(({ name, url }, index) => {
-          return (
-            <Link key={index} className={styles.itemContainer} href={url}>
-              {name}
-            </Link>
-          );
-        })}
+        {content.length > 0 ? (
+          content?.map(({ name, link }, index) => {
+            return (
+              <Link key={index} className={styles.itemContainer} href={link}>
+                {name}
+              </Link>
+            );
+          })
+        ) : (
+          <p>Nothing here</p>
+        )}
       </Container>
     </div>
   );
