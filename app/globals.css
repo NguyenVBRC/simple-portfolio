@@ -33,7 +33,13 @@ body {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2em;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    font-size: 3em;
+  }
 }
 
 a {

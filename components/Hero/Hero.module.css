@@ -1,49 +1,10 @@
 .heroContainer {
   position: relative;
-}
-
-.borderLineTopLeft {
-  position: absolute;
-  border: solid 1px white;
-  top: -48px;
-  left: -64px;
-  height: 64px;
-}
-
-.borderLineTopRight {
-  position: absolute;
-  border: solid 1px white;
-  left: -64px;
-  width: 64px;
-  top: -48px;
-}
-
-.borderLineBottomRight {
-  position: absolute;
-  border: solid 1px white;
-  right: -64px;
-  height: 64px;
-  bottom: -48px;
-}
-
-.borderLineBottomLeft {
-  position: absolute;
-  border: solid 1px white;
-  right: -64px;
-  width: 64px;
-  bottom: -48px;
+  margin: auto;
 }
 
 .heading {
   margin-bottom: 32px;
-}
-
-.verticalLine {
-  height: 64px;
-  border: solid 2px white;
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
 }
 
 @media (min-width: 768px) {

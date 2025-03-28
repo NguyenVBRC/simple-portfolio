@@ -1,11 +1,12 @@
 .techContainer {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .item {
   border: solid 1px var(--darkAccent);
   padding: 12px;
-  margin: 0 4px;
+  margin: 8px;
   border-radius: 8px;
 }

@@ -24,7 +24,12 @@ const PageLayout = ({
         {content.length > 0 ? (
           content?.map(({ name, link }, index) => {
             return (
-              <Link key={index} className={styles.itemContainer} href={link}>
+              <Link
+                key={index}
+                className={styles.itemContainer}
+                href={link}
+                target="blank"
+              >
                 {name}
               </Link>
             );
