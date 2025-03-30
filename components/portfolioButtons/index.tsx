@@ -9,12 +9,12 @@ const PortfolioButtons = () => {
     },
     {
       name: "LinkedIn Button",
-      link: "/",
+      link: "https://www.linkedin.com/in/jimmynguyendev/",
       initial: "LI",
     },
     {
       name: "GitHub Button",
-      link: "/",
+      link: "https://github.com/NguyenVBRC",
       initial: "GH",
     },
   ];
@@ -28,6 +28,7 @@ const PortfolioButtons = () => {
             target="_blank"
             rel="noopener noreferrer"
             {...(name.includes("Resume") ? { download: "" } : {})}
+            aria-label={name}
           >
             {initial}
           </a>
