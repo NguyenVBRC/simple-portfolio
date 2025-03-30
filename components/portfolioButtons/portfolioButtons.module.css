@@ -1,0 +1,16 @@
+.buttonContainer {
+  position: fixed;
+  bottom: 56px;
+  left: 10px;
+}
+
+.singleButton a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 69px;
+  border: solid 2px var(--darkAccent);
+  height: 40px;
+  width: 40px;
+  margin: 8px;
+}
