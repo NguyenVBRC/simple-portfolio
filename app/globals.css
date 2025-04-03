@@ -1,3 +1,11 @@
+/* 
+Min-width: 320px (smaller phone viewpoints)
+Min-width: 480px (small devices and most phones)
+Min-width: 768px (most tablets)
+Min-width: 992px (smaller desktop viewpoints)
+Min-width: 1200px (large devices and wide screens) 
+*/
+
 :root {
   /* https://color.adobe.com/ne-jinx-color-theme-19187755/ */
   --foreground: #171717;
@@ -30,6 +38,12 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+img {
+  max-inline-size: 100%;
+  height: auto;
+  display: block;
 }
 
 h1 {

@@ -6,6 +6,7 @@ import { supabase } from "@/lib/supabase";
 interface IContent {
   name: string;
   link: string;
+  thumbnail_url: string;
 }
 
 // Default Page Layout
@@ -30,16 +31,18 @@ const PageLayout = async ({
       <h1>{heading}</h1>
       <Container>
         {content.length > 0 ? (
-          content?.map(({ name, link }, index) => {
+          content?.map(({ name, link, thumbnail_url }, index) => {
             return (
               <Link
-                key={index}
                 className={styles.itemContainer}
+                key={index}
                 href={link}
                 target="blank"
               >
-                {name}
-                <img src={thumbnail} className={styles.thumbnails} />
+                <p>{name}</p>
+                <div className={styles.imgContainer}>
+                  <img src={thumbnail_url} className={styles.thumbnails} />
+                </div>
               </Link>
             );
           })
