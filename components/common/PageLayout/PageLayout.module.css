@@ -29,6 +29,8 @@
 
 .itemContainer p {
   margin: 16px 0;
+  width: 60%;
+  text-align: center;
 }
 
 .imgContainer {
