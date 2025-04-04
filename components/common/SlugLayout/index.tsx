@@ -10,12 +10,14 @@ const SlugLayout = async ({
   params: Promise<{ slug: string }>;
 }) => {
   const { slug } = await params;
+  const decodedSlug = decodeURIComponent(slug);
 
   return (
     <div className={styles.layoutContainer}>
-      <h1>{slug}</h1>
       <Container>
-        <p>Content to be pulled using params</p>
+        <img
+          src={`https://oqlmrimsozkgnuflqjul.supabase.co/storage/v1/object/public/project-img//${decodedSlug.toLowerCase()}.png`}
+        />
       </Container>
     </div>
   );
