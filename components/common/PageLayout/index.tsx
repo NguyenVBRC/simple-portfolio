@@ -31,7 +31,6 @@ const PageLayout = async ({
                 className={styles.itemContainer}
                 key={index}
                 href={`/projects/${name}`}
-                target="blank"
               >
                 <p>{name}</p>
                 <div className={styles.imgContainer}>
