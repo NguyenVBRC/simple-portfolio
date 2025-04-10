@@ -18,8 +18,6 @@ const PageLayout = async ({
   heading: string;
   content: IContent[];
 }) => {
-  console.log(content);
-
   return (
     <div className={styles.layoutContainer}>
       <h1>{heading}</h1>
