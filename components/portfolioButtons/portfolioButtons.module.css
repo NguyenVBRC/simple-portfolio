@@ -4,6 +4,7 @@
   left: 10px;
 }
 
+.resumeButton,
 .singleButton a {
   display: flex;
   justify-content: center;
@@ -13,4 +14,24 @@
   height: 40px;
   width: 40px;
   margin: 8px;
+}
+
+.resumeButton {
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  border: solid 2px var(--darkAccent);
+  background: var(--background);
+  color: var(--foreground);
+  padding: 1rem;
+  position: absolute;
+  bottom: 4.5rem;
+  left: 4rem;
+  cursor: pointer;
+}
+
+.showModal {
+  display: block !important;
 }
