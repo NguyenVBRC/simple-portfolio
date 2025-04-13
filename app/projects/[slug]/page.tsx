@@ -53,7 +53,6 @@ export default async function Page({
     <div className={styles.layoutContainer}>
       <Container>
         <img src={projectDetails.thumbnail_url} />
-        <Image src={projectDetails.thumbnail_url} alt={projectDetails.named} />
         <h2>Technologies</h2>
         <p>{projectDetails.technologies}</p>
       </Container>
