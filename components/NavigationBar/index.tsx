@@ -11,10 +11,10 @@ const NavigationBar = () => {
       name: "Projects",
       href: "/projects",
     },
-    {
-      name: "Blog",
-      href: "/blog",
-    },
+    // {
+    //   name: "Blog",
+    //   href: "/blog",
+    // },
   ];
 
   return (
