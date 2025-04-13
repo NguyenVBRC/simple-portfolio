@@ -1,9 +1,0 @@
-.layoutContainer {
-  margin: 100px 8px 0;
-}
-
-@media (width >= 576px) {
-  .layoutContainer {
-    margin: 128px 64px 0;
-  }
-}
