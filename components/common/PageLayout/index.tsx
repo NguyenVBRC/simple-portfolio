@@ -20,27 +20,36 @@ const PageLayout = async ({
 }) => {
   return (
     <div className={styles.layoutContainer}>
-      <h1>{heading}</h1>
-      <Container>
-        {content.length > 0 ? (
-          content?.map(({ name, thumbnail_url }, index) => {
-            return (
-              <Link
-                className={styles.itemContainer}
-                key={index}
-                href={`/projects/${name}`}
-              >
-                <p>{name}</p>
-                <div className={styles.imgContainer}>
-                  <img src={thumbnail_url} className={styles.thumbnails} />
-                </div>
-              </Link>
-            );
-          })
-        ) : (
-          <p>Nothing here</p>
-        )}
-      </Container>
+      {heading && content ? (
+        <>
+          <h1>{heading}</h1>
+          <Container>
+            {content.length > 0 ? (
+              content?.map(({ name, thumbnail_url }, index) => {
+                return (
+                  <Link
+                    className={styles.itemContainer}
+                    key={index}
+                    href={`/projects/${name}`}
+                  >
+                    <p>{name}</p>
+                    <div className={styles.imgContainer}>
+                      <img src={thumbnail_url} className={styles.thumbnails} />
+                    </div>
+                  </Link>
+                );
+              })
+            ) : (
+              <p>Nothing here</p>
+            )}
+          </Container>
+        </>
+      ) : (
+        <div>
+          <h2>Whoops... somethings wrong.</h2>
+          <p>Database might be down or paused.</p>
+        </div>
+      )}
     </div>
   );
 };
